@@ -1,0 +1,15 @@
+[Unit]
+Description=tsdump Service
+After=network.target systemd-sysctl.service systemd-modules-load.service
+
+[Service]
+User=root
+WorkingDirectory=/usr/local/sammtcbn/tsdump
+Restart=no
+Type=simple
+ExecStart=/usr/bin/env node /usr/local/sammtcbn/tsdump/index.js
+RemainAfterExit=true
+StandardOutput=null
+
+[Install]
+WantedBy=multi-user.target
