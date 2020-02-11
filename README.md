@@ -2,14 +2,14 @@ tsdump - a simple linux service to dump time stamp
 
 This is a simple project written by node.js. I create this repository in order to generate a basic linux service template for launching node.js application.
 
-Install
+Install on Linux
 ```bash
-$ sudo ./install.bash
+$ sudo ./linux_install.bash
 ```
 
-Uninstall
+Uninstall from Linux
 ```bash
-$ sudo ./uninstall.bash
+$ sudo ./linux_uninstall.bash
 ```
 
 Service Control by systemctl
