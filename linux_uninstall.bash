@@ -1,5 +1,6 @@
 #!/bin/bash
 SERVICE_NAME=tsdump.service
+INS_PATH=/usr/local/sammtcbn/tsdump
 
 if [ "$EUID" -ne 0 ]; then
     echo "Please run as root"
@@ -13,4 +14,4 @@ if [ -e /etc/systemd/system/${SERVICE_NAME} ]; then
     rm -f --preserve-root /etc/systemd/system/${SERVICE_NAME}
 fi
 
-rm -rf --preserve-root /usr/local/sammtcbn/tsdump
+rm -rf --preserve-root ${INS_PATH}
