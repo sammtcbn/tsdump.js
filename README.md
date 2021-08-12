@@ -8,6 +8,8 @@ This is a very simple template project to demonstrate how to generate a Linux/Wi
 
 Install service on Windows
 ```console
+node-v12-executable-download.bat
+nssm-download.bat
 win_install_service.bat
 ```
 
