@@ -1,6 +1,7 @@
 @echo off
 set currdir=%~dp0
-cd "%currdir%"
+IF "%currdir:~-1%"=="\" SET currdir=%currdir:~0,-1%
+cd /d "%currdir%"
 
 set nssmver=nssm-2.24
 set zipfile=%nssmver%.zip
